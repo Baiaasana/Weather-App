@@ -1,4 +1,4 @@
-package com.example.weatherapp.ui.theme
+package com.example.weatherapp.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build
@@ -65,6 +65,7 @@ fun WeatherAppTheme(
     MaterialTheme(
         colorScheme = colorScheme,
         typography = Typography,
-        content = content
+        content = content,
+        shapes = Shapes
     )
 }
