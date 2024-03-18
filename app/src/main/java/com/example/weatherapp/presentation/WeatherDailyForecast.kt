@@ -39,6 +39,4 @@ fun WeatherDailyForecast(
             })
         }
     }
-
-
 }

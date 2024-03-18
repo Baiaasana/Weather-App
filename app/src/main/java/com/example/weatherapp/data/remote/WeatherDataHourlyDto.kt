@@ -2,7 +2,7 @@ package com.example.weatherapp.data.remote
 
 import com.squareup.moshi.Json
 
-data class WeatherDataDto(
+data class WeatherDataHourlyDto(
     @field:Json(name = "relative_humidity_2m")
     val humidity: List<Double>,
     @field:Json(name = "temperature_2m")
