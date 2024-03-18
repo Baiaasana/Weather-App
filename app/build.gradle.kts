@@ -13,7 +13,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.weatherapp"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -66,7 +66,10 @@ dependencies {
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
-    implementation("androidx.compose.material3:material3")
+//    implementation("androidx.compose.material3:material3")
+    implementation( "androidx.compose.material:material:1.6.3")
+    implementation("androidx.wear.compose:compose-material:1.3.0")
+//    implementation("androidx.wear.compose:compose-material:1.3.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
@@ -78,10 +81,10 @@ dependencies {
 
     //Dagger - Hilt
 
-    implementation( "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03")
+//    implementation( "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03")
     implementation ("androidx.hilt:hilt-navigation-compose:1.2.0")
     implementation("com.google.dagger:hilt-android:2.51")
-    kapt("com.google.dagger:hilt-android-compiler:2.50")
+    kapt("com.google.dagger:hilt-android-compiler:2.51")
     kapt ("androidx.hilt:hilt-compiler:1.2.0")
 
 
@@ -94,6 +97,8 @@ dependencies {
     implementation ("com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.3")
 
     implementation ("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
+    implementation ("com.jakewharton.timber:timber:5.0.1")
+
 
 }
 
